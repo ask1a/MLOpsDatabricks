@@ -10,9 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  baseName: $[coalesce(variables['baseNameOverride'], 'mlopsdb')]
-  location: $[coalesce(variables['locationOverride'], 'westus2')]
-  azuresub: $[coalesce(variables['azuresubOverride'], 'davete02_sub')]
+  baseName: $[coalesce(variables['baseNameOverride'], 'MLOPStest')]
+  location: $[coalesce(variables['locationOverride'], 'westeurope')]
+  azuresub: $[coalesce(variables['azuresubOverride'], 'RMconnect')]
 
 steps:
 - task: AzureResourceGroupDeployment@2
